@@ -16,6 +16,7 @@ doorBox.forEach(element=>{
 // loop through the doors and add eventlistener to it when the user clicks on it
 doors.forEach((element)=>{
     element.addEventListener('click', (e)=>{
+        e.path[0].style.transform = "rotateY(180deg)";
     title.innerHTML = "";
     for(let i=0; i<doors.length; i++){
         if(i===randomNumber){
