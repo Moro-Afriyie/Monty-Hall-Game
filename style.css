@@ -29,6 +29,7 @@ body {
   position: relative;
   perspective: 1000px;
   border: 2px solid #f7d291;
+  cursor: pointer;
 }
 .door img {
   width: 100%;
