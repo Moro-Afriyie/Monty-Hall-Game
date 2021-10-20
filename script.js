@@ -1,6 +1,5 @@
 let doors = [];
 const doorBox = document.querySelectorAll(".door-box");
-const randomNumber = Math.floor(Math.random()*doors.length);
 let playGame = true;
 const ansYes = document.querySelector(".yes");
 const ansNo = document.querySelector(".no");
@@ -10,13 +9,12 @@ const title = document.querySelector(".title");
 // get all the doors id from the div tags and store it in the doors array
 doorBox.forEach(element=>{
     doors.push(document.getElementById(element.firstElementChild.id))
-})
+});
 
+const randomNumber = Math.floor(Math.random()*doorBox.length);
 
-// loop through the doors and add eventlistener to it when the user clicks on it
-doors.forEach((element)=>{
-    element.addEventListener('click', (e)=>{
-        e.path[0].style.transform = "rotateY(180deg)";
+const handleGamePlay = (e)=>{
+    e.path[0].style.transform = "rotateY(180deg)";
     title.innerHTML = "";
     for(let i=0; i<doors.length; i++){
         if(i===randomNumber){
@@ -51,8 +49,10 @@ doors.forEach((element)=>{
             });
         });
     }
-       
-   });
-    
-    
+   };
+
+
+// loop through the doors and add eventlistener to it when the user clicks on it
+doors.forEach((element)=>{
+    element.addEventListener('click', handleGamePlay);
 });

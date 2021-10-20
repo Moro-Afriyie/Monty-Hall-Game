@@ -14,7 +14,8 @@ body {
 }
 .container {
   display: flex;
-  gap: -1rem;
+  gap: 3rem;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex: 0.8;
