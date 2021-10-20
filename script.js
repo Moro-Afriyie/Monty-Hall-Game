@@ -46,8 +46,8 @@ const handleGamePlay = (e)=>{
                     box.parentNode.removeChild(document.querySelector(`.${ doorSelected }-box`));
                     answer.style.display = "none";
                       title.innerHTML = "";
-                      doors.forEach((element)=>{
-    element.addEventListener('click', handleGamePlay);
+                      doors.forEach((door)=>{
+    door.addEventListener('click', handleGamePlay);
 
 });
                 }
