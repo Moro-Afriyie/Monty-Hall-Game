@@ -20,7 +20,6 @@ doors.forEach((element)=>{
     for(let i=0; i<doors.length; i++){
         if(i===randomNumber){
              doorBox[i].children[1].innerHTML = `<img src="car.png" />`;
-             
         }
         else{
              doorBox[i].children[1].innerHTML = `<img src="goat.png" />`;
