@@ -26,11 +26,11 @@ doors.forEach((element)=>{
              doorBox[i].children[1].innerHTML = `<img src="goat.png" />`;
         }
     }
-     let doorSelected = e.path[1].id; 
+     let doorSelected = e.path[1].id;  // gets the id of the door which was selected
      let box =  document.querySelector(`.${e.path[1].id}-box`);
-     box.children[1].style.display = "block";
-     let imageSrc = box.children[1].firstChild.src.split('/')
-     let imageData = imageSrc[imageSrc.length-1].split(".")[0];
+     box.children[1].style.display = "block"; // get the parent div
+     let imageSrc = box.children[1].firstChild.src.split('/') // get the image src
+     let imageData = imageSrc[imageSrc.length-1].split(".")[0]; // get the value of the image
     if(imageData==="car"){
         title.innerHTML = "You win 🏆";
     }
