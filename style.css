@@ -19,6 +19,9 @@ body {
   justify-content: center;
   flex: 0.8;
 }
+.title {
+  font-size: 3rem;
+}
 .door-box {
   cursor: pointer;
 }
