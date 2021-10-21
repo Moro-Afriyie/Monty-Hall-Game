@@ -13,9 +13,17 @@ doorBox.forEach(element=>{
 
 const randomNumber = Math.floor(Math.random()*doorBox.length);
 
+const removeEvent =(e)=>{
+ doors.forEach((door)=>{
+        if(door === e.currentTarget && e.type==="click"){
+        door.removeEventListener('click', handleGamePlay);
+                }
+        });
+}
 const handleGamePlay = (e)=>{
     e.path[0].style.transform = "rotateY(180deg)";
     title.innerHTML = "";
+    console.log(e.type);
     doors.forEach((door)=>{
         if(door !== e.currentTarget){
         door.removeEventListener('click', handleGamePlay);
@@ -35,16 +43,16 @@ const handleGamePlay = (e)=>{
      let imageData = imageSrc[imageSrc.length-1].split(".")[0]; // get the value of the image
      
     if(imageData==="car"){
+       removeEvent(e);
         setTimeout(()=>{
  title.innerHTML = "You win 🏆";    
         },1000);
        
     }
     else{
-       
+        removeEvent(e);
        setTimeout(()=>{
 title.innerHTML = "You lose 😞";    
-     
         answer.style.display = "block";
         [ansYes, ansNo].forEach(element=>{
             element.addEventListener("click",(e)=>{
