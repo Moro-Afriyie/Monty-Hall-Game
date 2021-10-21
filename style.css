@@ -11,10 +11,12 @@ body {
   align-items: center;
   width: 100%;
   font-family: "Roboto", sans-serif;
+  background-color: #4b6584;
+  color: #ffffff;
 }
 .container {
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -53,9 +55,13 @@ body {
   z-index: -1;
   margin-left: auto;
   margin-right: auto;
+  background-color: #ffffff;
 }
 .image img {
   width: 8rem;
+  top: 70px;
+  left: 12px;
+  position: absolute;
 }
 .answer {
   display: none;
@@ -63,33 +69,36 @@ body {
 .answer h4 {
   text-transform: capitalize;
   text-align: center;
+  font-size: 1.5rem;
 }
 .button {
   display: flex;
   gap: 2rem;
-  margin: bottom;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
-  box-shadow: 0px 10px 14px -7px #276873;
-  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-  background-color: #599bb3;
+  box-shadow: 0px 10px 14px -7px #eb3b5a;
+  background: linear-gradient(to bottom, #eb3b5a 5%, #fc5c65 100%);
+  background-color: #eb3b5a;
   border-radius: 8px;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
-  padding: 7px 40px;
+  padding: 0.6rem 3rem;
   text-decoration: none;
   text-shadow: 0px 1px 0px #3d768a;
   border: none;
   outline: none;
 }
 button:hover {
-  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-  background-color: #408c99;
+  background: linear-gradient(to bottom, #fc5c65 5%, #eb3b5a 100%);
+  background-color: #fc5c65;
 }
 button:active {
   position: relative;
