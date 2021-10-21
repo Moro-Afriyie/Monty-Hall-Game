@@ -1,6 +1,5 @@
 let doors = [];
 const doorBox = document.querySelectorAll(".door-box");
-let playGame = true;
 const ansYes = document.querySelector(".yes");
 const ansNo = document.querySelector(".no");
 const answer = document.querySelector(".answer");
@@ -24,7 +23,6 @@ const removeEvent =(e)=>{
 const handleGamePlay = (e)=>{
     e.path[0].style.transform = "rotateY(180deg)";
     title.innerHTML = "";
-    console.log(e.type);
     doors.forEach((door)=>{
         if(door !== e.currentTarget){
         door.removeEventListener('click', handleGamePlay);
