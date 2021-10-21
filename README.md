@@ -6,4 +6,5 @@ The user wins when the user selects a car, and loses when the user selects a goa
 
 # Screenshots
 
-![]()
+![](https://github.com/Moro-Afriyie/Monty-Hall-Game/blob/main/lose.png)
+![](https://github.com/Moro-Afriyie/Monty-Hall-Game/blob/main/win.png)
