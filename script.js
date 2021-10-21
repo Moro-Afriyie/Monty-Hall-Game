@@ -35,10 +35,16 @@ const handleGamePlay = (e)=>{
      let imageData = imageSrc[imageSrc.length-1].split(".")[0]; // get the value of the image
      
     if(imageData==="car"){
-        title.innerHTML = "You win 🏆";
+        setTimeout(()=>{
+ title.innerHTML = "You win 🏆";    
+        },1000);
+       
     }
     else{
-       title.innerHTML = "You lose 😞";
+       
+       setTimeout(()=>{
+title.innerHTML = "You lose 😞";    
+     
         answer.style.display = "block";
         [ansYes, ansNo].forEach(element=>{
             element.addEventListener("click",(e)=>{
@@ -57,6 +63,7 @@ const handleGamePlay = (e)=>{
            }
             });
         });
+},1000);
     }
    };
 

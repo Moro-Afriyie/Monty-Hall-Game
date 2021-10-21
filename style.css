@@ -57,9 +57,6 @@ body {
 .image img {
   width: 8rem;
 }
-/* .door-box .door:hover img {
-transform: rotateY(180deg);
-} */
 .answer {
   display: none;
 }
