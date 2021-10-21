@@ -13,6 +13,7 @@ doorBox.forEach(element=>{
 
 const randomNumber = Math.floor(Math.random()*doorBox.length);
 
+// removes the event listener from the card that was clicked once the result it revealed
 const removeEvent =(e)=>{
  doors.forEach((door)=>{
         if(door === e.currentTarget && e.type==="click"){
