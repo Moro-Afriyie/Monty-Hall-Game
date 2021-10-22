@@ -22,7 +22,7 @@ const removeEvent = (e) => {
 };
 
 const handleGamePlay = (e) => {
-  e.path[0].style.transform = "rotateY( -120deg)";
+  e.path[0].style.transform = "rotateY(-120deg)";
   title.innerHTML = "";
   doors.forEach((door) => {
     if (door !== e.currentTarget) {
